@@ -13,10 +13,10 @@ const DELAY        = NumericInput.DELAY;
 describe('NumericInput', function() {
     this.timeout(10000);
 
-    it('works like inpit[type="number"] by default', () => {
+    it('works like input[type="number"] by default', () => {
         var widget = TestUtils.renderIntoDocument(<NumericInput />);
         expect(widget.refs.input.value).toEqual('');
-        expect(widget.refs.input.type).toEqual('text');
+        expect(widget.refs.input.type).toEqual('number');
     });
 
     it('accepts all the props', () => {

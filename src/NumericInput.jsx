@@ -232,7 +232,7 @@ class NumericInput extends Component
             cursor: 'not-allowed'
         },
 
-        // The input (input[type="text"])
+        // The input (input[type="number"])
         input: {
             paddingRight: '3ex',
             boxSizing   : 'border-box'
@@ -761,7 +761,7 @@ class NumericInput extends Component
             },
             input : {
                 ref: 'input',
-                type: 'text',
+                type: 'number',
                 style: style === false ? null : Object.assign(
                     {},
                     css.input,
